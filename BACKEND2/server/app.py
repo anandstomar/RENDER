@@ -11,7 +11,7 @@ from chatbot_kidney import graphk
 
 app = Flask(__name__)
 # CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=False)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app)
 
 @app.route('/predict/heart', methods=['OPTIONS'])
 def options():
